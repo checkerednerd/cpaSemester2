@@ -1,0 +1,9 @@
+var age = parseInt(prompt("How old are you?"));
+var oldFuck = (age > 65) ? true : false;
+console.log(oldFuck);
+
+var statsP1 = { name: "RJ Vincent", type: "Water/Fighting", hp: 200 }; //curly braces mean a key-value array
+
+for (var x in statsP1) { //prints the contents of the statsP1 array
+  console.log(statsP1[x]);
+}
