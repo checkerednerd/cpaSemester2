@@ -7,7 +7,8 @@ function candyCoating(x, y) {
   var sum = x+y;
   var average = sum / 2;
   
-  function chocolateCentre(u, v) {
+  // CLOSURE - that's all it is
+  function chocolateCentre(u, v) { //The nested function is called a CLOSURE
     var theUltimate = u + v + sum + average;
     /*
     * notice we can call sum and average (outer function variables) from the inner
@@ -28,10 +29,22 @@ function candyCoating(x, y) {
 }
 
 candyCoating(10, 5); //supplies two arguments to be used as parameters for x and y
-
 /*
 * similarly, scoping rules mean that in the global space, we cannot
 * access the variables sum or average, as they are local to the candyCoating
 * function, so the outer function (the window object) cannot access them unless
 * we call the function and use the returned value
 */
+
+//a quick function to run in place: Immiediately-Invoked Function Expressions
+(function testIIFE() {
+  var paper = 20;
+  var rock = 10;
+  
+  if (rock > paper) {
+    console.log("Rock wins!");
+  }
+  else {
+    console.log("Paper wins!");
+  }
+})();
