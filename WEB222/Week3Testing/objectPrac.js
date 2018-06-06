@@ -1,5 +1,5 @@
 //object: self-contained entity:
-//has properties (variables) and methods (functions)
+//has properties properties(variables) and methods (functions)
 //properties : STATE (syntax: propertyName)
 //methods : BEHAVIOUR (syntax: behaviourName()  note the brackets)
 
