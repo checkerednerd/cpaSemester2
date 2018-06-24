@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<script>
+    var count = 0;
+    function addToOuterList() {
+        var x = document.createElement("li"); //create a new list item
+        var y = document.createTextNode(new Date().getMinutes() + ":" + new Date().getSeconds() + " - " + count); //create a text node with the value of count
+        x.appendChild(y); //append a text node of count to a list item
+        
+        document.getElementById("#drinkList").appendChild(x);
+        count++;
+    }
+    function addToMidList() {
+        var x = document.createElement("li"); //create a new list item
+        var y = document.createTextNode(new Date().getMinutes() + ":" + new Date().getSeconds() + " - " + count); //create a text node with the value of count
+        x.appendChild(y); //append a text node of count to a list item
+        
+        document.getElementById("#teaList").appendChild(x);
+        count++;
+    }
+    function addToInnerList() {
+        var x = document.createElement("li"); //create a new list item
+        var y = document.createTextNode(new Date().getMinutes() + ":" + new Date().getSeconds() + " - " + count); //create a text node with the value of count
+        x.appendChild(y); //append a text node of count to a list item
+        
+        document.getElementById("#greenTeaList").appendChild(x);
+        count++;
+    }
+    function addNested() {
+        var x = document.createElement("ul"); //created a new list to add to under coffee
+        document.getElementById("#coffeeList").appendChild(x); //append new unordered list "x" to document at ID #coffeeList, which is a list item, so you appended a list to a list item...
+        var y = document.createElement("li");
+        var z = document.createTextNode("Added to Coffee at " + new Date().getMinutes() + ":" + new Date().getSeconds());
+        y.appendChild(z); //append the string and date to the new list item "y"
+        x.appendChild(y); //append the list item "y" to the new unordered list "x"
+    }
+</script>
+</head>
+<html>
+<body>
+<button onclick="addToOuterList()">Drink List+</button>
+<button onclick="addToMidList()">Tea List+</button>
+<button onclick="addToInnerList()">Green Tea List+</button>
+<button onclick="addNested()">Nested List</button>
+
+<h4>Lists inside a list:</h4>
+<ul id="#drinkList">
+  <li id="#coffeeList">Coffee</li>
+  <li>Tea
+    <ul id="#teaList">
+      <li>Black tea</li>
+      <li>Green tea
+        <ul id="#greenTeaList">
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+</body>
+</html>
