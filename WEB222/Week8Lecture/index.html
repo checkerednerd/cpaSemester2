@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <meta charset="UTF-8">
+        <title>Week 8 Testing</title>  
+        <style>
+            div {
+                background-color: steelblue;
+                height:30em;
+                width:30em;
+            }
+
+            #parent div { /*will apply to a div within the parent id*/
+                background-color: aliceblue;
+                height:10em;
+                width:10em;
+            }
+
+            #parent div div {
+                background-color: rgba(255, 0, 0, 0.3); /*30% transparent*/
+                height:5em;
+                width:5em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="parent">
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+</html>

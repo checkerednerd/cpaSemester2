@@ -1,0 +1,17 @@
+html{
+    background-color: burlywood;
+}
+
+h2{
+    text-align: center;
+    color:whitesmoke;
+    font-family: "Garamond";
+    font-size:30;
+}
+
+p{
+    text-align: center;
+    color: aliceblue;
+    font-family: "Garamond";
+    font-size:14;
+}
