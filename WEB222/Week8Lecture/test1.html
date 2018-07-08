@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="english">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test1 - Fiddling Around</title>
+        <style>
+            h2 { /*will change all h2 elements*/
+                color: #0022bb;
+            }
+
+            p { /*will change all paragraph elements*/
+                color: #FF0000;
+                font-size:150%;
+            }
+
+            /*the footer p block will override the p block, as it is more specific*/
+            footer p { /*will change all paragraph elements within the footer*/
+                color: #FFAA00;
+                font-size: 0.8em;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Let's try some CSS out...</h2>
+        <p>Gabba Gabba Hey!</p>
+    </body>
+    <footer>
+        <p>Copyright RJ Vincent 2018</p>
+    </footer>
+</html>
