@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="english">
-    <head>
-        <meta charset="UTF-8">
-        <title>Test1 - Fiddling Around</title>
-        <style>
-            h2 { /*will change all h2 elements*/
-                color: #0022bb;
-            }
 
-            p { /*will change all paragraph elements*/
-                color: #FF0000;
-                font-size:150%;
-            }
+<head>
+    <meta charset="UTF-8"/>
+    <title>Test1 - Fiddling Around</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="test1.js"></script>
+</head>
 
-            /*the footer p block will override the p block, as it is more specific*/
-            footer p { /*will change all paragraph elements within the footer*/
-                color: #FFAA00;
-                font-size: 0.8em;
-            }
-        </style>
-    </head>
+<body>
+    <nav>
+        <p>
+            <a href="index.html">Index</a>
+            <a href="test1.html">Test1</a>
+            <a href="test2.html">Test2</a>
+            <a href="test3.html">Test3</a>
+        </p>
+    </nav>
 
-    <body>
-        <h2>Let's try some CSS out...</h2>
-        <p>Gabba Gabba Hey!</p>
-    </body>
-    <footer>
-        <p>Copyright RJ Vincent 2018</p>
-    </footer>
+    <h2>Let's try some CSS out...</h2>
+    <p>Gabba Gabba Hey!</p>
+</body>
+
+<footer id="footy">
+</footer>
+
 </html>
