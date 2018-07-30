@@ -1,3 +1,3 @@
 # cpaSemester2
 
-Practice programs, typically C++ related to course content.
+Programming tests from CPA Semester 2, C++ and HTML/CSS/JS
